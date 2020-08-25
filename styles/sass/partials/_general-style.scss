@@ -1,3 +1,5 @@
+
+// Style Stripping 
 body,
 p,
 h1,
@@ -9,13 +11,15 @@ h3 {
     padding: 0;
 }
 
+// Set Root Font Size to 10px 
 html {
      font-size: 62.5%;
 }
 
 body {
-     font-size: 1.6rem;
-     line-height: 1.4;
+     font-family: $secondary-font;
+     font-size: 2rem;
+     line-height: 3.2rem;
 }
 
 .wrapper {

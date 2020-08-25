@@ -251,8 +251,9 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
-  line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 3.2rem;
 }
 
 .wrapper {
@@ -270,4 +271,18 @@ img {
 a {
   text-decoration: none;
   color: #000;
+}
+
+.main-header {
+  background: url("../assets/home-image-1.jpg") no-repeat fixed center/cover;
+  height: 100vh;
+}
+
+.main-header h1 {
+  color: #fff;
+}
+
+.main-header h1 .yellow-header {
+  color: #f8e71c;
+  display: block;
 }
