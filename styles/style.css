@@ -241,9 +241,11 @@ h1,
 h2,
 ul,
 span,
+ul,
 h3 {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 html {
@@ -251,13 +253,12 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 2rem;
-  line-height: 3.2rem;
 }
 
 .wrapper {
-  width: 85%;
+  width: 90%;
   max-width: 1250px;
   margin: 0 auto;
 }
@@ -274,15 +275,119 @@ a {
 }
 
 .main-header {
-  background: url("../assets/home-image-1.jpg") no-repeat fixed center/cover;
+  background: url("../assets/home-image-1.jpg") no-repeat scroll center/cover;
   height: 100vh;
+  position: relative;
+}
+
+.main-header .wrapper {
+  height: 100%;
 }
 
 .main-header h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16.6rem;
+  font-weight: 400;
+  z-index: 20;
+  padding-top: 100px;
+}
+
+.main-header h1 .yellow-heading {
+  color: #f8e71c;
+  display: block;
+  margin-top: -70px;
+}
+
+.main-header img {
+  width: 50%;
+  position: absolute;
+  bottom: -50px;
+  right: 0%;
+}
+
+.contact-header {
+  background: url("../assets/contact-header-1.jpg") no-repeat scroll center/cover;
+  height: 50vh;
+}
+
+.blog-header {
+  background: url("../assets/blog-header-1.jpg") no-repeat scroll center/cover;
+  height: 50vh;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  padding: 20px 0;
+}
+
+nav .logo {
+  font-size: 3rem;
+  padding-right: 20px;
   color: #fff;
 }
 
-.main-header h1 .yellow-header {
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul li {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+nav ul li:hover {
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
+nav ul a {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 20px;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+nav ul a:hover, nav ul a:focus {
   color: #f8e71c;
-  display: block;
+  text-shadow: -1px 2px 8px #f8e71c;
+}
+
+.nav-home {
+  color: #f8e71c;
+}
+
+.nav-contact {
+  color: #f8e71c;
+}
+
+.nav-blog {
+  color: #f8e71c;
+}
+
+.h1-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.yellow-heading {
+  color: #f8e71c;
 }

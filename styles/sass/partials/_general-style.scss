@@ -6,9 +6,11 @@ h1,
 h2,
 ul,
 span,
+ul,
 h3 {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 // Set Root Font Size to 10px 
@@ -17,13 +19,12 @@ html {
 }
 
 body {
-     font-family: $secondary-font;
+     font-family: $primary-font;
      font-size: 2rem;
-     line-height: 3.2rem;
 }
 
 .wrapper {
-     width: 85%;
+     width: 90%;
      max-width: 1250px;
      margin: 0 auto;
 }
