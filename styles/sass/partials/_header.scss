@@ -7,13 +7,10 @@
             height: 100%;
         }
         h1 {
-            font-family: $primary-font;
             font-size: 16.6rem;
             font-weight: 400;
             z-index: 20;
-            padding-top: 100px;
                 .yellow-heading {
-                    color: $primary-color;
                     display: block;
                     margin-top: -70px;
                 }
@@ -80,11 +77,14 @@ nav {
 .nav-container {
     display: flex;
 }
+
+// dark background on contact/blog nav pages 
 .contact-nav-container,
 .blog-nav-container {
     background: $body-text-color;
 }
 
+// sets colour on nav link for page currently on 
 .nav-contact {
     color: $primary-color;
 }
@@ -94,6 +94,13 @@ nav {
 }
 
 // h1 Styles 
+// general h1 styles overridden by main page specificity 
+h1 {
+    font-size: 6rem;
+    color: $light-text-color;
+}
+
+// flex for main page to center heading 
 .h1-container {
     height: 100%;
     display: flex;
@@ -101,16 +108,16 @@ nav {
     align-items: center;
 }
 
+// flex for contact/blog page heading
 .secondary-h1-container {
     height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
+
 .yellow-heading {
     color: $primary-color;
 }
 
-.span-break {
-    display: block;
-}
+
