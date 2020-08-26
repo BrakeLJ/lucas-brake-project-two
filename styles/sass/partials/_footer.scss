@@ -1,0 +1,19 @@
+footer {
+    font-family: $secondary-font;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+
+    background: $body-text-color;
+    color: $light-text-color;
+
+    padding: 5px;
+        a {
+            transition: all .5s;
+
+            &:hover,
+            &:focus {
+            color: $primary-color;
+        }
+        }
+}

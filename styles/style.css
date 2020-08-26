@@ -271,7 +271,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 .span-break {
@@ -375,7 +375,7 @@ nav ul a:hover, nav ul a:focus {
 
 .contact-nav-container,
 .blog-nav-container {
-  background: #000;
+  background: #2c2c2c;
 }
 
 .nav-contact {
@@ -419,5 +419,24 @@ h1 {
 }
 
 .yellow-heading {
+  color: #f8e71c;
+}
+
+footer {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 5px;
+}
+
+footer a {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+footer a:hover, footer a:focus {
   color: #f8e71c;
 }
