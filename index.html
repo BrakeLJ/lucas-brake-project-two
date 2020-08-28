@@ -49,50 +49,50 @@
     <!-- Main Content  -->
     <main role="main">
         <!-- About Section  -->
-        <section class="about">
+        <section class="section about-section">
             <div class="wrapper">
-                <h2>What is Planted?</h2>
-                <p>
+                <h2 class="section__heading section__heading--lrg">What is Planted?</h2>
+                <p class="section__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore expedita atque velit odit
                     distinctio beatae omnis commodi dolor quam sit possimus provident eos earum magnam qui, alias
                     voluptates cumque! Quae rem esse suscipit accusamus fugit voluptatum fugiat eius doloribus, ex
                     voluptatibus aliquid! Voluptas cupiditate voluptates error quia natus illum quod perferendis
                     facilis?
                 </p>
-                <a href="#">Find Out More</a>
+                <a class="section__btn" href="#">Find Out More</a>
             </div>
         </section>
 
         <!-- Article Section (change name from article and remove article tags)-->
-        <section class="article">
+        <section class="section article-section">
 
             <!-- Left Column  -->
-            <div class="img-text-column">
-                <div class="background-colour">
-                    <img src="./assets/left-flowers.jpg" alt="close up of a colourful arrangement of flowers">
-                </div>
-                <article>
-                    <h3>Unique plants to discover</h3>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia molestias distinctio a enim consequatur. Asperiores delectus officia voluptates maxime recusandae, quos possimus deleniti ipsum ab magnam ipsam, vitae a esse, facere id quia quae exercitationem.
-                    </p>
-                    <a href="#">Read More</a>
-                </article>
-            </div>
-
-            <!-- Right Column  -->
-            <div class="img-text-column">
-                <article>
-                    <h3>Unique plants to discover</h3>
-                    <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia molestias distinctio a enim consequatur.
-                    Asperiores delectus officia voluptates maxime recusandae, quos possimus deleniti ipsum ab magnam ipsam,
-                    vitae a esse, facere id quia quae exercitationem.
-                    </p>
-                    <a href="#">Read More</a>
-                </article>
-                <div class="background-colour">
-                    <img src="./assets/right-flowers.jpg" alt="close up of a bush with more out of focus in the background">
+            <div class="wrapper">
+                <div class="article-flex">
+                    <div class="article-section__column article-section__column--l">
+                        <img class="article-section__img-l" src="./assets/left-flowers.jpg" alt="close up of a colourful arrangement of flowers">
+                        <article class="article-section__text-box">
+                            <h2 class="section__heading section__heading--sml">Unique plants to discover</h2>
+                            <p class="section__text section__text--align-r">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia molestias distinctio a enim consequatur. Asperiores delectus officia voluptates maxime recusandae, quos possimus deleniti ipsum ab magnam ipsam, vitae a esse, facere id quia quae exercitationem.
+                            </p>
+                            <a class="section__btn" href="#">Read More</a>
+                        </article>
+                    </div>
+        
+                    <!-- Right Column  -->
+                    <div class="article-section__column article-section__column--r">
+                        <article class="article-section__text-box">
+                            <h2 class="section__heading section__heading--sml">Upcoming workshops</h2>
+                            <p class="section__text section__text--align-l">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia molestias distinctio a enim consequatur.
+                            Asperiores delectus officia voluptates maxime recusandae, quos possimus deleniti ipsum ab magnam ipsam,
+                            vitae a esse, facere id quia quae exercitationem.
+                            </p>
+                            <a class="section__btn" href="#">Read More</a>
+                        </article>
+                        <img class="article-section__img-r" src="./assets/right-flowers.jpg" alt="close up of a bush with more out of focus in the background">
+                    </div>
                 </div>
             </div>
         </section>
@@ -102,64 +102,73 @@
 
             <div class="wrapper">
                 <!-- Flexbox for More Info  -->
-                <div class="more-info-container">
-                    <h3>Green houses</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore amet sequi repudiandae autem assumenda laudantium numquam incidunt, esse placeat, quis, illo voluptates ipsam fugiat odit.
-                    </p>
-                </div>
-    
-                <div class="more-info-container">
-                    <h3>Community</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore amet sequi repudiandae autem assumenda laudantium numquam incidunt, esse placeat, quis, illo voluptates ipsam fugiat odit.
-                    </p>
-                </div>
-    
-                <div class="more-info-container">
-                    <h3>Blog</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore amet sequi repudiandae autem assumenda laudantium numquam incidunt, esse placeat, quis, illo voluptates ipsam fugiat odit.
-                    </p>
-                </div>
-    
-                <div class="more-info-container">
-                    <h3>Get in touch</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore amet sequi repudiandae autem assumenda laudantium numquam incidunt, esse placeat, quis, illo voluptates ipsam fugiat odit.
-                    </p>
+                <div class="more-info-grid-container">
+                    <div class="more-info-container">
+                        <h2 class="section__heading">Green houses</h2>
+                        <p class="section__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore amet sequi repudiandae autem assumenda laudantium numquam incidunt, esse placeat, quis, illo voluptates ipsam fugiat odit.
+                        </p>
+                    </div>
+        
+                    <div class="more-info-container">
+                        <h2 class="section__heading">Community</h2>
+                        <p class="section__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore amet sequi repudiandae autem assumenda laudantium numquam incidunt, esse placeat, quis, illo voluptates ipsam fugiat odit.
+                        </p>
+                    </div>
+        
+                    <div class="more-info-container">
+                        <h2 class="section__heading">Blog</h2>
+                        <p class="section__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore amet sequi repudiandae autem assumenda laudantium numquam incidunt, esse placeat, quis, illo voluptates ipsam fugiat odit.
+                        </p>
+                    </div>
+        
+                    <div class="more-info-container">
+                        <h2 class="section__heading">Get in touch</h2>
+                        <p class="section__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore amet sequi repudiandae autem assumenda laudantium numquam incidunt, esse placeat, quis, illo voluptates ipsam fugiat odit.
+                        </p>
+                    </div>
                 </div>
             </div>
-
-            <!-- Div for a banner image  -->
-            <div class="banner"></div>
         </section>
 
+        <!-- Div for a banner image  -->
+        <div class="banner"></div>
+
         <!-- Founder Section  -->
-        <section class="founder">
+        <section class="founder-section">
             <div class="wrapper">
                 <div class="founder-container">
-                    <div class="background-colour">
-                        <img src="./assets/founder.jpg" alt="the founder of planted standing surrounded by flowering trees.">
-                    </div>
+                    <img class="founder-section__img" src="./assets/founder.jpg" alt="the founder of planted standing surrounded by flowering trees.">
+                    
                     <article>
-                        <h3>Planted's founder</h3>
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam placeat cupiditate a quas maxime blanditiis beatae praesentium sed atque possimus modi obcaecati, quidem tempore aperiam! Animi quis est modi incidunt laboriosam, reiciendis nemo officiis tempore corporis commodi ea! Reiciendis, voluptatibus. Odit sunt optio voluptate commodi dolores, beatae veritatis est ducimus.
+                        <h2 class="section__heading">Planted's founder</h2>
+                        <p class="section__text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam placeat cupiditate a quas maxime blanditiis beatae praesentium sed atque possimus modi obcaecati, quidem tempore aperiam! Animi quis est modi incidunt laboriosam, reiciendis nemo baby yoda tempore corporis commodi ea! Reiciendis, voluptatibus. Odit sunt optio voluptate commodi dolores, beatae veritatis est ducimus.
                         </p>
-                        <a href="#">Find Out More</a>
+                        <a class="section__btn" href="#">Find Out More</a>
                     </article>
                 </div>
             </div>
         </section>
 
         <!-- Gallery Section  -->
-        <section class="gallery">
-            <ul>
-                <li><img src="./assets/gallery-image-1.jpg" alt="a green house teeming with floral life"></li>
-                <li><img src="./assets/gallery-image-2.jpg" alt="potted cactus shot top down on a off white surface"></li>
-                <li><img src="./assets/gallery-image-3.jpg" alt="rows of a variety of potted cactus"></li>
-            </ul>
+        <section class="gallery-section">
+            <div class="wrapper">
+                <ul class="gallery-section__ul">
+                    <li class="gallery-section__li">
+                        <img class="gallery-section__img" src="./assets/gallery-image-1.jpg" alt="a green house teeming with floral life">
+                    </li>
+                    <li class="gallery-section__li gallery-section__li--center">
+                        <img class="gallery-section__img " src="./assets/gallery-image-2.jpg" alt="potted cactus shot top down on a off white surface">
+                    </li>
+                    <li class="gallery-section__li">
+                        <img class="gallery-section__img" src="./assets/gallery-image-3.jpg" alt="rows of a variety of potted cactus">
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 

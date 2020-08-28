@@ -23,6 +23,8 @@
         }
 }
 
+
+
 .contact-header {
     background: url("../assets/contact-header-1.jpg") no-repeat scroll center/cover;
     height: 75vh;
@@ -38,7 +40,7 @@ nav {
     display: flex;
     padding: 20px 0;
         .logo {
-            font-size: 3rem;
+        font-size: 3rem;
             padding-right: 20px;
             color: $light-text-color;
         }
@@ -81,7 +83,7 @@ nav {
 // dark background on contact/blog nav pages 
 .contact-nav-container,
 .blog-nav-container {
-    background: $body-text-color;
+    background: #000;
 }
 
 // sets colour on nav link for page currently on 
@@ -98,6 +100,12 @@ nav {
 h1 {
     font-size: 6rem;
     color: $light-text-color;
+    animation: fade-in 2s ease-in .3s normal both
+}
+
+@keyframes fade-in {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 // flex for main page to center heading 

@@ -16,6 +16,7 @@ h3 {
 // Set Root Font Size to 10px 
 html {
      font-size: 62.5%;
+     scroll-behavior: smooth;
 }
 
 body {
@@ -43,4 +44,19 @@ a {
 // creates line breaks where needed on spans 
 .span-break {
     display: block;
+}
+
+.section__btn {
+     padding: 10px 15px;
+     background: $secondary-color;
+     color: $light-text-color;
+     transition: background .5s;
+
+     &:hover {
+          background: lighten($secondary-color, 10);
+     }
+     &:focus {
+          background: lighten($secondary-color, 10);
+          border: 2px solid $primary-color;
+     }
 }

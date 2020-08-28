@@ -1,0 +1,188 @@
+// Main Sections Styles
+
+// About section 
+.about-section {
+    background: $background-color;
+    text-align: center;
+    padding: 200px 150px;
+}
+
+.section__heading {
+    font-size: 3.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.section__heading--lrg {
+    font-size: 5.63rem;
+}
+
+.section__text {
+    font-family: $secondary-font;
+    margin-bottom: 25px;
+    line-height: 3.2rem;
+}
+
+// **** link buttons in general styles 
+
+// Article section 
+
+.article-flex {
+    display: flex;
+    justify-content: space-between;
+}
+// General column style 
+.article-section__column {
+    width: 40%;
+}
+
+.article-section__text-box {
+    margin: 75px 0 30px 0;
+}
+
+// Left column style 
+.article-section__column--l {
+    text-align: right;
+    
+}
+
+.article-section__img-l {
+    box-shadow: 15px 15px $primary-color;
+    position: relative;
+    top: -15px;
+    right: 15px;
+    //mess with width to get it outside container. or keep it out of wrapper
+}
+
+// Right column style 
+
+.article-section__column--r {
+    text-align: left;
+}
+
+.article-section__img-r {
+    box-shadow: -15px -15px $primary-color;
+    position: relative;
+    bottom: -15px;
+    left: 15px;
+}
+
+// More info section 
+
+.more-info {
+    background: $background-color;
+    padding: 100px 0;
+}
+
+.more-info-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 50% 50%;
+}
+
+// Banner image 
+
+.banner{
+    background: url("../assets/banner-image.jpg") no-repeat center/cover; 
+    height: 40vh;
+}
+
+// Founder section 
+
+.founder-section {
+    background: $background-color;
+    padding: 75px;
+}
+
+.founder-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.founder-section__img {
+    box-shadow: 10px 10px $primary-color;
+    margin-right: 75px;
+}
+
+// Gallery section styles 
+
+.gallery-section__ul {
+    display: flex;
+    padding: 75px
+}
+
+.gallery-section__li {
+    overflow: hidden;
+}
+
+.gallery-section__li--center {
+    margin: 0 20px;
+}
+
+.gallery-section__img {
+    transition: transform .5s;
+
+    &:hover {
+        transform: scale(1.25);
+    }
+}
+
+//******Blog Page********
+
+.blog-main {
+    background: $background-color;
+}
+
+.sidebar-blog-container {
+    display: flex;
+}
+
+// Sidebar section
+
+.sidebar {
+    margin-top: 75px;
+}
+
+.sidebar__img {
+    width: 25%;
+}
+
+.section__link-text {
+    color: $secondary-text-color;
+}
+
+.aside__list-items a {
+    color: $body-text-color;
+}
+
+//blog section
+
+.blog-section {
+    width: 75%;
+}
+
+.blog-section__img {
+    box-shadow: -15px 15px $primary-color;
+    margin-top: -100px;
+    position: relative;
+    left: 15px;
+}
+
+.blog-post {
+    padding: 50px 0 0 20px;
+    border-left: 4px solid $primary-color;
+    border-bottom: 4px solid $primary-color;
+}
+
+// Comments
+
+.comment-container {
+    display: flex;
+}
+
+.comment__img {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+
