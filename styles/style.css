@@ -255,6 +255,7 @@ html {
 }
 
 body {
+  color: #2c2c2c;
   font-family: "Josefin Sans", sans-serif;
   font-size: 2rem;
 }
@@ -664,7 +665,7 @@ h1 {
   border: 2px solid #0e902d;
   display: block;
   width: 100%;
-  margin: 30px 0;
+  margin: 50px 0;
   padding: 20px;
   background: #f0efed;
   font-family: "Josefin Sans", sans-serif;
@@ -678,7 +679,13 @@ h1 {
   border: none;
 }
 
+.main-contact {
+  max-height: 50vh;
+  background: #f0efed;
+}
+
 .contact-flex {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -692,7 +699,6 @@ h1 {
 
 .address {
   width: 25%;
-  font-family: "Roboto", sans-serif;
   line-height: 1.5;
 }
 
@@ -703,11 +709,27 @@ h1 {
 }
 
 .address__socials-link {
-  padding: 10px;
+  padding-right: 20px;
 }
 
 .address__socials-link i {
   color: #0e902d;
+  font-size: 2.4rem;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.address__socials-link i:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.address__socials-link:focus {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  border: 1px solid #0e902d;
 }
 
 .address__email {
@@ -716,8 +738,28 @@ h1 {
 
 .address__email-link {
   color: #2c2c2c;
-  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.4rem;
   font-weight: bold;
+}
+
+.main-contact .form {
+  width: 60%;
+}
+
+.main-contact .form__fieldset--contact {
+  -webkit-box-shadow: -15px 15px #f8e71c;
+          box-shadow: -15px 15px #f8e71c;
+  background: #fff;
+  position: relative;
+  top: -125px;
+}
+
+.main-contact .form__input--contact {
+  background: #fff;
+}
+
+.main-contact .form__message--contact {
+  background: #fff;
 }
 
 footer {

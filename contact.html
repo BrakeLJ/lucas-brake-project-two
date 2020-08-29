@@ -68,7 +68,7 @@
                     <span class="span-break address__email">
                         <a class="address__email-link" href="mailto: info@email.com">info@email.com</a>
                     </span>
-                    <span class="content__text">
+                    <span class="section__text">
                         123-456-7890 <br />
                         123 Queen Street West, Unit 10 <br />
                         Toronto, Ontario <br />
@@ -77,13 +77,13 @@
                 </span>
                 
                 <form class="form" action="#">
-                    <fieldset class="form__fieldset">
+                    <fieldset class="form__fieldset form__fieldset--contact">
                         <legend></legend>
                         <label class="sr-only" for="name">input your name</label>
-                        <input class="form__input form__input--margin" type="text" name="name" id="name" required placeholder="Name">
+                        <input class="form__input form__input--margin form__input--contact" type="text" name="name" id="name" required placeholder="Name">
                         <label class="sr-only" for="email">input your email</label>
-                        <input class="form__input" type="email" name="email" id="email" required placeholder="Email Address">
-                        <textarea class="form__message" name="message" id="message" cols="30" rows="10"></textarea>
+                        <input class="form__input form__input--contact" type="email" name="email" id="email" required placeholder="Email Address">
+                        <textarea class="form__message form__message--contact" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
                         <button class="section__btn form__btn" type="submit">Submit</button>
                     </fieldset>
                 </form>
