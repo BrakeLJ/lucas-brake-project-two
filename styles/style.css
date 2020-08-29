@@ -678,6 +678,48 @@ h1 {
   border: none;
 }
 
+.contact-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.address {
+  width: 25%;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+.address__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.address__socials-link {
+  padding: 10px;
+}
+
+.address__socials-link i {
+  color: #0e902d;
+}
+
+.address__email {
+  margin: 15px 0;
+}
+
+.address__email-link {
+  color: #2c2c2c;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+}
+
 footer {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;

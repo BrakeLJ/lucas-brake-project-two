@@ -265,6 +265,38 @@
 
 //----Contact Page----
 
+.contact-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address {
+    width: 25%;
+    font-family: $secondary-font;
+    line-height: 1.5;
+    
+    &__ul {
+        display: flex;
+    }
+
+    &__socials-link {
+        padding: 10px;
+        i {
+            color: $secondary-color;
+        }
+    }
+
+    &__email {
+        margin: 15px 0;
+    }
+
+    &__email-link {
+        color: $body-text-color;
+        font-family: $primary-font;
+        font-weight: bold;
+    }
+}
 
 
 

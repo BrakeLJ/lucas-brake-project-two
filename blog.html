@@ -142,13 +142,12 @@
             <form class="form" action="#">
                 <div class="wrapper">
                     <fieldset class="form__fieldset">
-                        <!-- <legend></legend> -->
-                        <!-- <div class="input-container"> -->
-                            <label class="sr-only" for="name"></label>
-                            <input class="form__input form__input--margin" type="text" name="name" id="name" required placeholder="Name">
-                            <label class="sr-only" for="email"></label>
-                            <input class="form__input" type="email" name="email" id="email" required placeholder="Email Address">
-                        <!-- </div> -->
+                        <!-- Do I need this if no label, sr only?  -->
+                        <legend></legend> 
+                        <label class="sr-only" for="name">input your name</label>
+                        <input class="form__input form__input--margin" type="text" name="name" id="name" required placeholder="Name">
+                        <label class="sr-only" for="email">input your email</label>
+                        <input class="form__input" type="email" name="email" id="email" required placeholder="Email Address">
                         <textarea class="form__message" name="message" id="message" cols="30" rows="10" required placeholder="Comment"></textarea>
                         <button class="section__btn form__btn" type="submit">Post Comment</button>
                     </fieldset>

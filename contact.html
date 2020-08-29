@@ -45,50 +45,50 @@
         </div>
     </header>
 
-    <main  id="main" class="contact-main" role="main">
+    <!-- Main Content  -->
+    <main  id="main" class="main-contact" role="main">
         <div class="wrapper">
-            <address class="contact-container">
-                <div class="socials">
-                    <ul>
-                        <li>
-                            <a href="" aria-label="Visit us on facebook"><i class="fab fa-facebook-f"></i></a>
+            <div class="contact-flex">
+                <!-- Address element added italics I couldn't get rid of  -->
+                <span class="address">
+                    <ul class="address__ul">
+                        <li class="address__li">
+                            <a class="address__socials-link" href="" aria-label="Visit us on facebook"><i class="fab fa-facebook-f"></i></a>
                         </li>
                         <li>
-                            <a href="" aria-label="Visit us on instagram"><i class="fab fa-instagram"></i></a>
+                            <a class="address__socials-link" href="" aria-label="Visit us on instagram"><i class="fab fa-instagram"></i></a>
                         </li>
                         <li>
-                            <a href="" aria-label="Visit us on twitter"><i class="fab fa-twitter"></i></a>
+                            <a class="address__socials-link" href="" aria-label="Visit us on twitter"><i class="fab fa-twitter"></i></a>
                         </li>
                         <li>
-                            <a href="" aria-label="Contact us on whats app"><i class="fab fa-whatsapp"></i></a>
+                            <a class="address__socials-link" href="" aria-label="Contact us on whats app"><i class="fab fa-whatsapp"></i></a>
                         </li>
                     </ul>
-                </div>
-                <!-- CHECK OUT SEMANTIC ELEMENTS FOR EMAIL, HOW TO HANDLE IT  -->
-                <span><a href="mailto: info@email.com">info@email.com</a></span>
-                <!-- CHECK IF BR IS THE WAY TO GO  -->
-                <span>
-                    123-456-7890 <br>
-                    123 Queen Street West, Unit 10 <br>
-                    Toronto, Ontario <br>
-                    M5V2D5
+                    <span class="span-break address__email">
+                        <a class="address__email-link" href="mailto: info@email.com">info@email.com</a>
+                    </span>
+                    <span class="content__text">
+                        123-456-7890 <br />
+                        123 Queen Street West, Unit 10 <br />
+                        Toronto, Ontario <br />
+                        M5V2D5
+                    </span>
                 </span>
-            </address>
+                
+                <form class="form" action="#">
+                    <fieldset class="form__fieldset">
+                        <legend></legend>
+                        <label class="sr-only" for="name">input your name</label>
+                        <input class="form__input form__input--margin" type="text" name="name" id="name" required placeholder="Name">
+                        <label class="sr-only" for="email">input your email</label>
+                        <input class="form__input" type="email" name="email" id="email" required placeholder="Email Address">
+                        <textarea class="form__message" name="message" id="message" cols="30" rows="10"></textarea>
+                        <button class="section__btn form__btn" type="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
         </div>
-        
-        <form action="">
-            <fieldset>
-                <legend></legend>
-                <div class="input-container">
-                    <label class="sr-only" for="name" ></label>
-                    <input type="text" name="name" id="name" required placeholder="Name">
-                    <label class="sr-only" for="email"></label>
-                    <input type="email" name="email" id="email" required placeholder="Email Address">
-                </div>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                <button type="submit">Submit</button>
-            </fieldset>
-        </form>
     </main>
 
     <!-- Footer Content  -->
