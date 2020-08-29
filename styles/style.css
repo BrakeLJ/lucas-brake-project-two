@@ -241,6 +241,7 @@ h1,
 h2,
 ul,
 span,
+time,
 ul,
 h3 {
   margin: 0;
@@ -589,30 +590,11 @@ h1 {
           transform: scale(1.25);
 }
 
-.blog-main {
+.main-blog {
   background: #f0efed;
-}
-
-.sidebar-blog-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.sidebar {
-  margin-top: 75px;
-}
-
-.sidebar__img {
-  width: 25%;
-}
-
-.section__link-text {
-  color: #074115;
-}
-
-.aside__list-items a {
-  color: #2c2c2c;
 }
 
 .blog-section {
@@ -633,15 +615,67 @@ h1 {
   border-bottom: 4px solid #f8e71c;
 }
 
-.comment-container {
+.comments {
+  padding: 30px;
+}
+
+.comments__heading {
+  margin-bottom: 40px;
+}
+
+.comments__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 70px;
 }
 
-.comment__img {
-  max-height: 200px;
-  max-width: 200px;
+.comments__img {
+  max-height: 100px;
+  max-width: 100px;
+  margin-right: 20px;
+}
+
+.comments__heading--date {
+  margin-bottom: 10px;
+  color: #074115;
+  font-size: 2rem;
+}
+
+.form__fieldset {
+  border: none;
+}
+
+.form__input {
+  border: none;
+  border-bottom: 2px solid #0e902d;
+  padding: 20px;
+  width: calc(50% - 15px);
+  background: #f0efed;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.8rem;
+}
+
+.form__input--margin {
+  margin-right: 20px;
+}
+
+.form__message {
+  border: 2px solid #0e902d;
+  display: block;
+  width: 100%;
+  margin: 30px 0;
+  padding: 20px;
+  background: #f0efed;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.8rem;
+  resize: none;
+}
+
+.form__btn {
+  display: block;
+  width: 100%;
+  border: none;
 }
 
 footer {
