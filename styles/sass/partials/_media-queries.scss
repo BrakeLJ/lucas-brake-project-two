@@ -1,43 +1,66 @@
-// .wrapper {
-//             height: 100%;
-//         }
-//         h1 {
-//             font-size: 16.6rem;
-//             font-weight: 400;
-//             z-index: 20;
-//                 .yellow-heading {
-//                     display: block;
-//                     margin-top: -70px;
-//                 }
-//         }
-//         img {
-//             width: 50%;
-//             position: absolute;
-//             bottom: -50px;
-//             right: 0%;
-//         }
 
-// nav {
-//     display: flex;
-//     padding: 20px 0;
-//         .logo {
-//         font-size: 3rem;
-//             padding-right: 20px;
-//             color: $light-text-color;
 
-//       }
-//         ul {
-//             display: flex;
-//             align-items: center;
-//                 li {
-//                     transition: all .5s;
+@media (max-width: 1020px) {
+    //General
+    .section__text {
+        font-size: 1.6rem;
+    }
+    
+    // Main 
+    .main-header__img {
+        width: 50%;
+    }
 
-//                     &:hover {
-//                         transform: translateY(-5px);
-//                     }
-//                 }
-//                 a {
-                    
-//                 }
-//         }
-// }
+    .about {
+        padding: 100px 0;
+    }
+
+    .workshop__text-box {
+        margin: 50px 0 25px 0;
+
+        &--left {
+            margin-left: 25px;
+        }
+        &--right {
+            margin-right: 25px;
+        }
+    }
+
+    .gallery__ul {
+        padding: 15px
+    }
+
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav {
+    // show bars 
+    // &__check, .nav__check-label {
+    //     display: inline;
+    // }
+
+    // Hide checkbox 
+    // &__check {
+    //     position: fixed;
+	// 	right: 1rem;
+	// 	opacity: 0;
+    // }
+
+
+
+}

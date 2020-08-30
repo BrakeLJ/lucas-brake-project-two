@@ -121,24 +121,26 @@
 
 // Gallery section styles 
 
-.gallery-section__ul {
-    display: flex;
-    padding: 75px
-}
+.gallery {
 
-.gallery-section__li {
-    overflow: hidden;
-}
+    &__ul {
+        display: flex;
+        padding: 75px
+    }
 
-.gallery-section__li--center {
-    margin: 0 20px;
-}
+    &__li {
+        overflow: hidden;
+    }
 
-.gallery-section__img {
-    transition: transform .5s;
+    &__li--center {
+        margin: 0 20px;
+    }
 
-    &:hover {
-        transform: scale(1.25);
+    &__img {
+        transition: transform .5s;
+        &:hover {
+            transform: scale(1.25);
+        }
     }
 }
 
@@ -331,7 +333,7 @@
 //--------------------
 
 .main-contact {
-    max-height: 50vh;
+    min-height: 50vh;
     background: $background-color;
 }
 
@@ -347,7 +349,7 @@
 // Address block 
 
 .address {
-    width: 25%;
+    width: 30%;
     line-height: 1.5;
     
     &__ul {

@@ -26,7 +26,7 @@
     }
 
     &__img {
-        width: 50%;
+        width: 40%;
         position: absolute;
         bottom: -50px;
         right: 0%;
@@ -37,6 +37,11 @@
 .nav {
     display: flex;
     padding: 20px 0;
+
+    // Mobile check box hidden 
+    &__check, .nav__check-label {
+        display: none;
+    }
 
     &__logo {
         font-size: 3rem;
