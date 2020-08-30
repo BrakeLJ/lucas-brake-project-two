@@ -84,6 +84,7 @@
 h1 {
     font-size: 8rem;
     animation: fade-in 2s ease-in .3s normal both;
+    margin-bottom: 40px;
 }
 
 // Animation keyframe 
@@ -100,12 +101,12 @@ h1 {
 // Blog/contact page styles 
 .contact-header {
     background: url("../assets/contact-header-1.jpg") no-repeat scroll center/cover;
-    height: 75vh;
+    min-height: 75vh;
 }
 
 .blog-header {
     background: url("../assets/blog-header-1.jpg") no-repeat scroll center/cover;
-    height: 75vh;    
+    min-height: 75vh;    
 }
 
 // dark background on contact/blog nav pages 
@@ -121,7 +122,7 @@ h1 {
 
 // flex for contact/blog page heading
 .secondary-h1-container {
-    height: 80%;
+    min-height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;

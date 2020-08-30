@@ -5,7 +5,7 @@
     .section__text {
         font-size: 1.6rem;
     }
-    
+
     // Main 
     .main-header__img {
         width: 50%;
@@ -29,8 +29,238 @@
     .gallery__ul {
         padding: 15px
     }
+}
 
+@media (max-width: 790px) {
+    //Navigations
+    .nav {
+        justify-content: space-between;
+
+        &__ul {
+            display: block;
+            z-index: 10;
+        }
+
+        &__li {
+            padding: 10px 0;
+        }
+
+        &__link {
+            padding: 10px 0;
+        }
+
+        // PLAY WITH OR GET RID OF 
+        // &__dark {
+        //     color: black;
+        // }
+    }
+
+    .contact-nav-container,
+    .blog-nav-container {
+        background: rgba(0, 0, 0, 0);
+    }
+
+    .nav-container {
+        justify-content: space-between;
+    }
+
+    // Headers 
+    .main-header {
+        min-height: 50vh;
+
+        &__heading-box {
+            height: 100%;
+        }
+
+        &__heading {
+            font-size: 10rem;
+        }
+    }
+
+    .secondary-h1-container {
+        min-height: 50hv;
+        justify-content: flex-start;
+    }
+
+    .blog-header,
+    .contact-header {
+        max-height: 50vh;
+    }
+
+
+
+    // workshop block 
+    .workshop {
+
+        &__flex {
+            flex-direction: column;
+        }
+
+        &__column {
+            width: 100%;
+            text-align: center;
+        }
+
+        &__column--right {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__img--right {
+            order: -1;
+            margin-bottom: 20px;
+        }
+
+        &__text-box {
+            margin: 20px 20px;
+        }
+    }
+
+    //More info block
+    .more-info__grid-container {
+        grid-template-columns: auto 1fr;
+    }
+
+    //founder
+    .founder {
+        &__flex {
+            flex-direction: column;
+            padding: 20px 0;
+        }
+
+        &__img-box {
+            width: 50%;
+            margin: 0 auto 20px auto; 
+        }
+
+        &__text {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    //Gallery
+    .gallery {
+
+        &__ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__li--center {
+            margin: 0;
+        }
+        &__li {
+            margin: 20px 0;
+            width: 80%;
+        }
+
+        &__img {
+            transition: none;   
+            &:hover {
+                transform: none;
+            }
+        }
+    }
+
+    //Blog page
+    .main-blog {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 0;
+
+        &__img {
+            box-shadow: none;
+            border-top: 2px solid $primary-color;
+        }
+
+        &__text-box {
+            width: 100%;
+            margin-right: 0;
+            padding: 20px;
+        }
+        
+    }
+
+    .blog-section {
+        width: 100%;
+
+        &__img {
+            margin-top: 0   ;
+            width: 100%;
+            box-shadow: none;
+        }
+
+        &__blog-post {
+            border-left: none;
+        }
+    }
+
+    //Contact page
+    .contact-flex {
+        flex-direction: column;
+    }
+
+    .address {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .main-contact .form {
+        width: 100%;
+
+        &__fieldset--contact {
+            position: static;
+            box-shadow: none;
+        }
+    }
     
+
+}
+
+@media (max-width: 480px) {
+    //Headers
+    // .secondary-h1-container {
+    //     min-height: 50hv;
+    //     justify-content: flex-start;
+    // }
+
+    // .blog-header,
+    // .contact-header {
+    //     max-height: 50vh;
+    // }
+    
+    //Main page
+    .main-header{
+        &__img {
+            display: none;
+        }
+
+        &__heading {
+            font-size: 7rem;
+        }
+    }
+
+    //Blog page
+    .comments {
+        padding: 10px;
+
+        &__container {
+            flex-direction: column;
+        }
+    }
+
+    .form {
+        &__input {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    //Contact page
 
 
 }
