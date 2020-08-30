@@ -24,15 +24,17 @@
         <nav class="blog-nav-container" role="navigation">
             <div class="wrapper nav-container">
                 <!-- Logo  -->
-                <span class="logo">Planted</span>
-                <ul>
-                    <li><a href="./index.html">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a class="nav-blog" href="#">blog</a></li>
-                    <li><a href="./contact.html">contact</a></li>
+                <span class="logo nav__logo">Planted</span>
+                <!-- Nav links  -->
+                <ul class="nav__ul">
+                    <li class="nav__li"><a class="nav__link" href="./index.html">home</a></li>
+                    <li class="nav__li"><a class="nav__link" href="#">about</a></li>
+                    <li class="nav__li"><a class="nav__link current-page" href="./blog.html">blog</a></li>
+                    <li class="nav__li"><a class="nav__link" href="./contact.html">contact</a></li>
                 </ul>
             </div>
         </nav>
+        
         <div class="wrapper secondary-h1-container">
             <h1 class="yellow-heading">Blog</h1>
         </div>
@@ -41,41 +43,41 @@
     <!-- Main Content  -->
     <main class="main-blog">
 
-        <!-- Side-bar Section  -->
+        <!-- Side-bar Block  -->
         <aside class="sidebar">
             <img class="sidebar__img" src="./assets/side-bar-image.jpg" alt="wooden framed window on an old stone house">
-            <div class="sidebar__text">
-                <h class="section__heading--small">About Planted</h>
-                <p class="section__text">
+            <div class="sidebar__text-box">
+                <h3 class="section__heading sidebar__heading">About Planted</h3>
+                <p class="section__text sidebar__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ab aperiam corrupti. 
-                    <a class="section__link-text" href="#">Find Out More</a>
+                    <a class="sidebar__link-text" href="#">Find Out More</a>
                 </p>
-                <h2 class="section__heading--small">Recent Posts</h2>
-                <ul class="aside__list">
-                    <li class="aside__list-items">
-                        <a href="#">Donec faculisis tortor ut</a>
+                <h3 class="section__heading sidebar__heading ">Recent Posts</h3>
+                <ul class="sidebar__list">
+                    <li class="sidebar__list-items">
+                        <a class="sidebar__links" href="#">Donec faculisis tortor ut</a>
                     </li>
-                    <li class="aside__list-items">
-                        <a href="#">Augue lacinia at viverra</a>
+                    <li class="sidebar__list-items">
+                        <a class="sidebar__links" href="#">Augue lacinia at viverra</a>
                     </li>
-                    <li class="aside__list-items">
-                        <a href="#">Semper sed sapien metue</a>
+                    <li class="sidebar__list-items">
+                        <a class="sidebar__links" href="#">Semper sed sapien metue</a>
                     </li>
-                    <li class="aside__list-items">
-                        <a href="#">Scelerisque nec pharetra id</a>
+                    <li class="sidebar__list-items">
+                        <a class="sidebar__links" href="#">Scelerisque nec pharetra id</a>
                     </li>
                 </ul>
             </div>
         </aside>
 
-        <!-- Blog post Section  -->
+        <!-- Blog post Block  -->
         <section class="blog-section">
             <img class="blog-section__img" src="./assets/post-image.jpg" alt="upper large leaves of a plant">
-            <article class="blog-post">
-                <div class="wrapper">
-                    <h2 class="section__heading">Our mission at planted</h2>
-                    <span>
-                        <time datetime="">Monday January 21st, 2019</time> by <span>Yousra</span>
+            <div class="wrapper">
+                <article class="blog-section__blog-post">
+                    <h2 class="section__heading blog-section__heading">Our mission at planted</h2>
+                    <span class="blog-section__date">
+                        <time datetime="">Monday January 21st, 2019</time> by <span class="blog-section__date--bold">Yousra</span>
                     </span>
                     <p class="section__text">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut laboriosam assumenda, consequatur autem
@@ -102,12 +104,10 @@
                         deserunt tenetur incidunt obcaecati dolore illum soluta blanditiis provident eius laudantium sed porro
                         repellat. Deserunt eius sit culpa non dolores fugit ut.
                     </p>
+                </article>
+            </div>
         
-                </div>
-            </article>
-        
-            
-            <!-- Comments -->
+            <!-- Comments Block -->
             <div class="comments">
                 <div class="wrapper">
                     <h3 class="section__heading comments__heading">Comments:</h3>
@@ -117,7 +117,7 @@
                             <h3 class="section__heading comments__heading--date">
                                 <time datetime="2018-10-09">Tuesday October 9th, 2018</time> by Jeremy
                             </h3>
-                            <p class="section__text">
+                            <p class="section__text comments__text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quo adipisci dolor hic eos? Dolorum exercitationem, dignissimos maiores cumque esse a nulla! Accusamus tenetur, quasi harum laborum autem nihil ut distinctio in expedita doloremque unde?
                             </p>
                         </div>
@@ -129,7 +129,7 @@
                             <h3 class="section__heading comments__heading--date">
                                 <time datetime="2018-10-10">Wednesday October 10th, 2018</time> by Julia
                             </h3>
-                            <p class="section__text">
+                            <p class="section__text comments__text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quo adipisci dolor hic eos? Dolorum
                                 exercitationem, dignissimos maiores cumque esse a nulla! Accusamus tenetur, quasi harum.
                             </p>

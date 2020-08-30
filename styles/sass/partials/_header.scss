@@ -1,30 +1,98 @@
-// Header Styles
+//-------------
+// Headers---
+//-------------
+
+// Main header 
 .main-header {
-    background: url("../assets/home-image-1.jpg") no-repeat scroll center/cover;
-    height: 100vh;
     position: relative;
-        .wrapper {
-            height: 100%;
+    min-height: 75vh;
+    background: url("../assets/home-image-1.jpg") no-repeat scroll center/cover;
+
+    &__heading-box {
+        height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__heading {
+        color: $light-text-color;
+        font-size: 16.6rem;
+        font-weight: 400;
+        z-index: 20;
+        .yellow-heading {
+            display: block;
         }
-        h1 {
-            font-size: 16.6rem;
-            font-weight: 400;
-            z-index: 20;
-                .yellow-heading {
-                    display: block;
-                    margin-top: -70px;
-                }
-        }
-        img {
-            width: 50%;
-            position: absolute;
-            bottom: -50px;
-            right: 0%;
-        }
+    }
+
+    &__img {
+        width: 50%;
+        position: absolute;
+        bottom: -50px;
+        right: 0%;
+    }
 }
 
+// Nav block (styles across all three pages)
+.nav {
+    display: flex;
+    padding: 20px 0;
 
+    &__logo {
+        font-size: 3rem;
+        padding-right: 20px;
+        color: $light-text-color
+    }
 
+    &__ul {
+        display: flex;
+        align-items: center;
+    }
+
+    &__li {
+        transition: all .5s;
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+
+    &__link {
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: $light-text-color;
+        padding: 0 20px;
+        transition: all .8s;
+
+        &:hover,
+        &:focus {
+            color: $primary-color;
+            text-shadow: -1px 2px 8px $primary-color;
+        }
+    }
+}
+
+// Current Page Nav Colours 
+.current-page {
+    color: $primary-color;
+}
+// General headings 
+h1 {
+    font-size: 8rem;
+    animation: fade-in 2s ease-in .3s normal both;
+}
+
+// Animation keyframe 
+@keyframes fade-in {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+// Yellow headings 
+.yellow-heading {
+    color: $primary-color;
+}
+
+// Blog/contact page styles 
 .contact-header {
     background: url("../assets/contact-header-1.jpg") no-repeat scroll center/cover;
     height: 75vh;
@@ -35,85 +103,15 @@
     height: 75vh;    
 }
 
-// Nav Styles (General-> Specific)
-nav {
-    display: flex;
-    padding: 20px 0;
-        .logo {
-        font-size: 3rem;
-            padding-right: 20px;
-            color: $light-text-color;
-        }
-        ul {
-            display: flex;
-            align-items: center;
-                li {
-                    transition: all .5s;
-
-                    &:hover {
-                        transform: translateY(-5px);
-                    }
-                }
-                a {
-                    font-size: 2rem;
-                    font-weight: bold;
-                    text-transform: uppercase;
-                    color: $light-text-color;
-                    padding: 0 20px;
-                    transition: all .8s;
-
-                    &:hover,
-                    &:focus {
-                        color: $primary-color;
-                        text-shadow: -1px 2px 8px $primary-color;
-                    }
-                }
-        }
-}
-
-// Current Page Nav Colours 
-.nav-home {
-    color: $primary-color;
-}
-
-.nav-container {
-    display: flex;
-}
-
 // dark background on contact/blog nav pages 
 .contact-nav-container,
 .blog-nav-container {
     background: #000;
+    padding: 10px 0;
 }
 
-// sets colour on nav link for page currently on 
-.nav-contact {
-    color: $primary-color;
-}
-
-.nav-blog {
-    color: $primary-color;
-}
-
-// h1 Styles 
-// general h1 styles overridden by main page specificity 
-h1 {
-    font-size: 6rem;
-    color: $light-text-color;
-    animation: fade-in 2s ease-in .3s normal both
-}
-
-@keyframes fade-in {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-// flex for main page to center heading 
-.h1-container {
-    height: 100%;
+.nav-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 // flex for contact/blog page heading
@@ -124,8 +122,5 @@ h1 {
     justify-content: flex-end;
 }
 
-.yellow-heading {
-    color: $primary-color;
-}
 
 

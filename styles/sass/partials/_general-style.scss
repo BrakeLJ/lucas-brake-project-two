@@ -48,6 +48,8 @@ a {
     display: block;
 }
 
+// General styling for repeatable elements 
+
 .section__btn {
      padding: 10px 15px;
      background: $secondary-color;
@@ -61,4 +63,16 @@ a {
           background: lighten($secondary-color, 10);
           border: 2px solid $primary-color;
      }
+}
+
+.section__heading {
+    font-size: 3.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.section__text {
+    font-family: $secondary-font;
+    margin-bottom: 25px;
+    line-height: 3.2rem;
 }

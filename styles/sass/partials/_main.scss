@@ -1,107 +1,122 @@
-// Main Sections Styles
+//-------------
+// Main page---
+//-------------
 
-// About section 
-.about-section {
+// About block
+
+.about {
     background: $background-color;
     text-align: center;
-    padding: 200px 150px;
+    padding: 200px 125px;
+
+    &__heading {
+        font-size: 5.63rem;
+    }
 }
 
-.section__heading {
-    font-size: 3.2rem;
-    font-weight: bold;
-    letter-spacing: 1px;
+// workshop block
+
+.workshop {
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__column {
+        width: 40%;
+    }
+
+    &__column--left {
+        text-align: right;
+    }
+
+    &__img--left {
+        box-shadow: 15px 15px $primary-color;
+        position: relative;
+        top: -15px;
+        right: 15px;
+    }
+
+    &__text-box {
+        margin: 100px 0 50px 0;
+    }
+
+    &__text-box--left {
+        margin-left: 75px;
+    }
+
+    &__text-box--right {
+        margin-right: 75px;
+    }
+
+    &__column--right {
+        text-align: left;
+    }
+
+    &__img--right {
+        box-shadow: -15px 15px $primary-color;
+        position: relative;
+        bottom: -15px;
+        left: 15px;
+    }
 }
 
-.section__heading--lrg {
-    font-size: 5.63rem;
-}
-
-.section__text {
-    font-family: $secondary-font;
-    margin-bottom: 25px;
-    line-height: 3.2rem;
-}
-
-// **** link buttons in general styles 
-
-// Article section 
-
-.article-flex {
-    display: flex;
-    justify-content: space-between;
-}
-// General column style 
-.article-section__column {
-    width: 40%;
-}
-
-.article-section__text-box {
-    margin: 75px 0 30px 0;
-}
-
-// Left column style 
-.article-section__column--l {
-    text-align: right;
-    
-}
-
-.article-section__img-l {
-    box-shadow: 15px 15px $primary-color;
-    position: relative;
-    top: -15px;
-    right: 15px;
-    //mess with width to get it outside container. or keep it out of wrapper
-}
-
-// Right column style 
-
-.article-section__column--r {
-    text-align: left;
-}
-
-.article-section__img-r {
-    box-shadow: -15px -15px $primary-color;
-    position: relative;
-    bottom: -15px;
-    left: 15px;
-}
-
-// More info section 
+// More info block 
 
 .more-info {
     background: $background-color;
     padding: 100px 0;
-}
 
-.more-info-grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 50% 50%;
+    &__grid-container {
+        display: grid;
+        grid-template-columns: auto 1fr auto 1fr;
+        grid-template-rows: 50% 50%;
+    }
+
+    &__icon {
+        margin-right: 10px;
+        font-size: 2rem;
+        .fa-circle {
+            color: $primary-color;
+        }
+        .shape {
+            color: #000;
+        }
+    }
 }
 
 // Banner image 
 
-.banner{
+.banner {
     background: url("../assets/banner-image.jpg") no-repeat center/cover; 
     height: 40vh;
 }
 
-// Founder section 
 
-.founder-section {
+
+// Founder block 
+
+.founder {
     background: $background-color;
-    padding: 75px;
-}
 
-.founder-container {
-    display: flex;
-    justify-content: space-between;
-}
+    &__flex {
+        padding: 75px 0;
+        display: flex;
+        justify-content: space-between;
+    }
 
-.founder-section__img {
-    box-shadow: 10px 10px $primary-color;
-    margin-right: 75px;
+    &__img-box {
+        width: 20%;
+    }
+
+    &__img {
+        box-shadow: 10px 10px $primary-color;
+    }
+
+    &__text {
+        width: 75%;
+    }
 }
 
 // Gallery section styles 
@@ -127,69 +142,112 @@
     }
 }
 
-
+//-----------------
 //----Blog Page----
+//-----------------  
+
+// flex container 
 
 .main-blog {
     background: $background-color;
     display: flex;
+    justify-content: space-between;
 }
 
-// Sidebar section
+// Sidebar block
 
+.sidebar {
+    width: 35%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
+    &__img {
+        box-shadow: 15px 0 $light-text-color;
+    }
 
+    &__text-box {
+        width: 80%;
+        margin-right: -15px;
+        padding: 0px 60px 20px 10px;
+        align-self: flex-end;
+        
+        background: $light-text-color;
+    }
 
+    &__heading {
+        font-size: 1.8rem;
+        margin: 20px 0 15px 0;
+    }
 
+    &__text {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
 
+    &__link-text {
+        color: $secondary-text-color;
+        font-style: italic;
 
+        &:hover {
+            font-weight: bold;
+        }
+        &:focus {
+            font-weight: bold;;
+        }
+    }
 
+    &__list {
+        list-style: disc;
+        list-style-position: inside;
+        color: $secondary-text-color;
+    }
 
-// .sidebar {
-//     margin: 75px 40px 0 50px;
-//     height: 100%;
-//     width: 40%;
-//     background: white;
-// }
+    &__links {
+        color: $body-text-color;
+        font-family: $secondary-font;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+}
 
-// .sidebar__img {
-//     width: 100%;
-//     margin-left: -75px;
-//     margin-top: -20px;
-// }
-
-// .sidebar__text {
-//     padding: 20px;;
-// }
-
-// .section__link-text {
-//     color: $secondary-text-color;
-// }
-
-// .aside__list-items a {
-//     color: $body-text-color;
-// }
-
-//blog section
+//blog block
 
 .blog-section {
-    width: 75%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &__img {
+        box-shadow: -15px 15px $primary-color;
+        margin-top: -100px;
+        width: 95%;
+    }
+
+    &__blog-post {
+        padding: 50px 0 0 20px;
+        border-left: 4px solid $primary-color;
+        border-bottom: 4px solid $primary-color;
+        margin-left: -15px;
+    }
+
+    &__date {
+        display: block;
+        margin-bottom: 35px;
+
+        color: $secondary-text-color;
+        font-size: 1.8rem;
+        font-style: italic;
+
+        &--bold {
+            font-weight: bold;
+        }
+    }
 }
 
-.blog-section__img {
-    box-shadow: -15px 15px $primary-color;
-    margin-top: -100px;
-    position: relative;
-    left: 15px;
-}
-
-.blog-post {
-    padding: 50px 0 0 20px;
-    border-left: 4px solid $primary-color;
-    border-bottom: 4px solid $primary-color;
-}
-
-// Comments
+// Comments block
 
 .comments {
     padding: 30px;
@@ -204,8 +262,8 @@
     }
 
     &__img {
-        max-height: 100px;
-        max-width: 100px;
+        max-height: 75px;
+        max-width: 75px;
         margin-right: 20px; 
     }
 
@@ -213,13 +271,18 @@
         margin-bottom: 10px;
         color: $secondary-text-color;
         font-size: 2rem;
-        
+    }
+
+    &__text {
+        font-size: 1.8rem;
     }
 }
 
-//comment form
+//Form block (main styles)
 
 .form {
+
+    width: 100%;
 
     &__fieldset {
         border: none;
@@ -263,7 +326,9 @@
     }
 }
 
+//--------------------
 //----Contact Page----
+//--------------------
 
 .main-contact {
     max-height: 50vh;
@@ -271,6 +336,7 @@
 }
 
 // Flex container 
+
 .contact-flex {
     height: 100%;
     display: flex;
@@ -305,7 +371,6 @@
             transform: scale(1.25);
             border: 1px solid $secondary-color;
         }
-    
     }
 
     &__email {
@@ -320,6 +385,7 @@
 }
 
 // Form block (main styles declared in blog section)
+
 .main-contact .form {
     width: 60%;
 
