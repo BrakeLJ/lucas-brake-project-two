@@ -20,6 +20,7 @@
         font-size: 16.6rem;
         font-weight: 400;
         z-index: 20;
+
         .yellow-heading {
             display: block;
         }
@@ -37,11 +38,6 @@
 .nav {
     display: flex;
     padding: 20px 0;
-
-    // Mobile check box hidden 
-    &__check, .nav__check-label {
-        display: none;
-    }
 
     &__logo {
         font-size: 3rem;
@@ -79,18 +75,6 @@
 // Current Page Nav Colours 
 .current-page {
     color: $primary-color;
-}
-// General headings 
-h1 {
-    font-size: 8rem;
-    animation: fade-in 2s ease-in .3s normal both;
-    margin-bottom: 40px;
-}
-
-// Animation keyframe 
-@keyframes fade-in {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
 }
 
 // Yellow headings 

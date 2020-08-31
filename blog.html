@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planted | Blog</title>
-
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&family=Roboto&display=swap"
         rel="stylesheet">
-    
     <!-- Font Awesome  -->
     <script src="https://kit.fontawesome.com/921924a5a0.js" crossorigin="anonymous"></script>
    
@@ -17,24 +15,23 @@
 </head>
 
 <body>
-    
     <!-- Header Content  -->
     <header class="blog-header" role="banner">
+
         <!-- Navigation  -->
         <nav class="blog-nav-container" role="navigation">
             <div class="wrapper nav-container">
                 <!-- Logo  -->
-                <span class="logo nav__logo nav__dark">Planted</span>
+                <span class="logo nav__logo">Planted</span>
                 <!-- Nav links  -->
                 <ul class="nav__ul">
-                    <li class="nav__li"><a class="nav__link nav__dark" href="./index.html">home</a></li>
-                    <li class="nav__li"><a class="nav__link nav__dark" href="#">about</a></li>
-                    <li class="nav__li"><a class="nav__link nav__dark current-page" href="./blog.html">blog</a></li>
-                    <li class="nav__li"><a class="nav__link nav__dark" href="./contact.html">contact</a></li>
+                    <li class="nav__li"><a class="nav__link" href="./index.html">home</a></li>
+                    <li class="nav__li"><a class="nav__link" href="#">about</a></li>
+                    <li class="nav__li"><a class="nav__link current-page" href="./blog.html">blog</a></li>
+                    <li class="nav__li"><a class="nav__link" href="./contact.html">contact</a></li>
                 </ul>
             </div>
         </nav>
-        
         <div class="wrapper secondary-h1-container">
             <h1 class="yellow-heading">Blog</h1>
         </div>
@@ -47,12 +44,16 @@
         <aside class="sidebar">
             <img class="sidebar__img" src="./assets/side-bar-image.jpg" alt="wooden framed window on an old stone house">
             <div class="sidebar__text-box">
+
+                <!-- About planted  -->
                 <h3 class="section__heading sidebar__heading">About Planted</h3>
                 <p class="section__text sidebar__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ab aperiam corrupti. 
                     <a class="sidebar__link-text" href="#">Find Out More</a>
                 </p>
                 <h3 class="section__heading sidebar__heading ">Recent Posts</h3>
+
+                <!-- Recent post list  -->
                 <ul class="sidebar__list">
                     <li class="sidebar__list-items">
                         <a class="sidebar__links" href="#">Donec faculisis tortor ut</a>
@@ -74,6 +75,7 @@
         <section class="blog-section">
             <img class="blog-section__img" src="./assets/post-image.jpg" alt="upper large leaves of a plant">
             <div class="wrapper">
+                <!-- Blog post  -->
                 <article class="blog-section__blog-post">
                     <h2 class="section__heading blog-section__heading">Our mission at planted</h2>
                     <span class="blog-section__date">
@@ -111,6 +113,7 @@
             <div class="comments">
                 <div class="wrapper">
                     <h3 class="section__heading comments__heading">Comments:</h3>
+                    <!-- First comment  -->
                     <div class="comments__container">
                         <img class="comments__img" src="./assets/profile-image.jpg" alt="profile picture of commenter">
                         <div>
@@ -122,7 +125,8 @@
                             </p>
                         </div>
                     </div>
-                
+                    
+                    <!-- Second comment  -->
                     <div class="comments__container">
                         <img class="comments__img" src="./assets/profile-image-2.jpg" alt="profile picture of commenter">
                         <div>
@@ -142,8 +146,6 @@
             <form class="form" action="#">
                 <div class="wrapper">
                     <fieldset class="form__fieldset">
-                        <!-- Do I need this if no label, sr only?  -->
-                        <legend></legend> 
                         <label class="sr-only" for="name">input your name</label>
                         <input class="form__input form__input--margin" type="text" name="name" id="name" required placeholder="Name">
                         <label class="sr-only" for="email">input your email</label>
@@ -153,7 +155,6 @@
                     </fieldset>
                 </div>
             </form>
-            
         </section>
     </main>
 

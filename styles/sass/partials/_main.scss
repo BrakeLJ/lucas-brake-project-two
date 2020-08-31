@@ -140,7 +140,6 @@
 //-----------------  
 
 // flex container 
-
 .main-blog {
     background: $background-color;
     display: flex;
@@ -148,7 +147,6 @@
 }
 
 // Sidebar block
-
 .sidebar {
     width: 35%;
     margin-top: 100px;
@@ -206,7 +204,6 @@
 }
 
 //blog block
-
 .blog-section {
     width: 60%;
     display: flex;
@@ -272,9 +269,7 @@
 }
 
 //Form block (main styles)
-
 .form {
-
     width: 100%;
 
     &__fieldset {
@@ -282,7 +277,7 @@
     }
 
     &__input {
-        border: none; // Was this needed?
+        border: none; 
         border-bottom: 2px solid $secondary-color;
         padding: 20px;
         width: calc(50% - 15px);
@@ -329,7 +324,6 @@
 }
 
 // Flex container 
-
 .contact-flex {
     height: 100%;
     display: flex;
@@ -338,7 +332,6 @@
 }
 
 // Address block 
-
 .address {
     width: 30%;
     line-height: 1.5;
@@ -360,7 +353,7 @@
             }
         }
 
-        &:focus   {
+        &:focus {
             transform: scale(1.25);
             border: 1px solid $secondary-color;
         }
@@ -378,7 +371,6 @@
 }
 
 // Form block (main styles declared in blog section)
-
 .main-contact .form {
     width: 60%;
 

@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planted | Contact</title>
-
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&family=Roboto&display=swap"
         rel="stylesheet">
-    
     <!-- Font Awesome  -->
     <script src="https://kit.fontawesome.com/921924a5a0.js" crossorigin="anonymous"></script>
     <!-- 
@@ -40,7 +38,6 @@
                 </ul>
             </div>
         </nav>
-
         <div class="wrapper secondary-h1-container">
             <h1 class="yellow-heading">Get in <span class="span-break">Touch</span> </h1>
         </div>
@@ -50,7 +47,8 @@
     <main  id="main" class="main-contact" role="main">
         <div class="wrapper">
             <div class="contact-flex">
-                <!-- Address element added italics I couldn't get rid of  -->
+                <!-- Should I use address element here to be more semantic? It was havok on my styling and couldn't get rig of the italics  -->
+                <!-- Contact information  -->
                 <span class="address">
                     <ul class="address__ul">
                         <li class="address__li">
@@ -69,6 +67,7 @@
                     <span class="span-break address__email">
                         <a class="address__email-link" href="mailto: info@email.com">info@email.com</a>
                     </span>
+                    <!-- Used br here. I know its out of fashion but Jen Simmons said it was good for addresses and poems. thoughts? -->
                     <span class="section__text">
                         123-456-7890 <br />
                         123 Queen Street West, Unit 10 <br />
@@ -79,7 +78,6 @@
                 
                 <form class="form" action="#">
                     <fieldset class="form__fieldset form__fieldset--contact">
-                        <legend></legend>
                         <label class="sr-only" for="name">input your name</label>
                         <input class="form__input form__input--margin form__input--contact" type="text" name="name" id="name" required placeholder="Name">
                         <label class="sr-only" for="email">input your email</label>

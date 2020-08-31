@@ -8,17 +8,17 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&family=Roboto&display=swap"
         rel="stylesheet">
-
     <!-- Font Awesome  -->
     <script src="https://kit.fontawesome.com/921924a5a0.js" crossorigin="anonymous"></script>
     <!-- 
+    <i class="fa fa-bars"></i>
     <i class="fas fa-circle"></i>
     <i class="fas fa-leaf"></i>
     <i class="fas fa-file"></i>
     <i class="fas fa-users"></i>
     <i class="fas fa-phone"></i>
     <i class="far fa-copyright"></i>-->
-
+    
     <!-- Style stylesheet -->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
@@ -32,15 +32,9 @@
             <nav class="nav" role="navigation">
                 <!-- Logo  -->
                 <span class="logo nav__logo">Planted</span>
-                
-                <!-- Mobile drop menu  -->
-                <!-- MIGHT NEED AN X OR SYMBOL WHEN CLICKED  -->
-                <input class="nav__check" type='checkbox' id='nav-toggle' name='nav-toggle'>
-                <label class="nav__check-label" for='nav-toggle'>
-                    <span class="hamburger"><i class="fas fa-bars"></i></span>
-                </label>
+        
                 <!-- Nav links  -->
-                <ul class="nav__ul">
+                <ul class="nav__ul nav_slide">
                     <li class="nav__li"><a class="nav__link current-page"  href="#">home</a></li>
                     <li class="nav__li"><a class="nav__link" href="#">about</a></li>
                     <li class="nav__li"><a class="nav__link" href="./blog.html">blog</a></li>
@@ -59,6 +53,7 @@
 
     <!-- Main Content  -->
     <main role="main">
+
         <!-- About block  -->
         <section class="about">
             <div class="wrapper">
@@ -110,7 +105,7 @@
         <section class="more-info">
             <div class="wrapper">
 
-            <!-- Grid layout  -->
+                <!-- Grid layout  -->
                 <div class="more-info__grid-container">
                     <!-- Font awesome stack  -->
                     <span class="fa-stack fa-2x more-info__icon">
@@ -168,16 +163,16 @@
                         </p>
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <img src="./assets/banner-image.jpg" alt="two ceramic pots with flowers surrounding a ceramic wattering can on a window sill ">
+        <img src="./assets/banner-image.jpg" alt="two ceramic pots with flowers surrounding a ceramic wattering can on a window sill">
 
         <!-- Founder Section  -->
         <section class="founder">
             <div class="wrapper">
 
+                <!-- Flex container  -->
                 <div class="founder__flex">
                     <div class="founder__img-box">
                         <img class="founder__img" src="./assets/founder.jpg" alt="the founder of planted standing surrounded by flowering trees.">

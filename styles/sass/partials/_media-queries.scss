@@ -48,11 +48,6 @@
         &__link {
             padding: 10px 0;
         }
-
-        // PLAY WITH OR GET RID OF 
-        // &__dark {
-        //     color: black;
-        // }
     }
 
     .contact-nav-container,
@@ -182,7 +177,6 @@
             margin-right: 0;
             padding: 20px;
         }
-        
     }
 
     .blog-section {
@@ -217,22 +211,9 @@
             box-shadow: none;
         }
     }
-    
-
 }
 
 @media (max-width: 480px) {
-    //Headers
-    // .secondary-h1-container {
-    //     min-height: 50hv;
-    //     justify-content: flex-start;
-    // }
-
-    // .blog-header,
-    // .contact-header {
-    //     max-height: 50vh;
-    // }
-    
     //Main page
     .main-header{
         &__img {
@@ -259,10 +240,6 @@
             width: 100%;
         }
     }
-
-    //Contact page
-
-
 }
 
 

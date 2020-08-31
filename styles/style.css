@@ -310,6 +310,31 @@ a {
   line-height: 3.2rem;
 }
 
+h1 {
+  font-size: 8rem;
+  -webkit-animation: fade-in 2s ease-in .3s normal both;
+          animation: fade-in 2s ease-in .3s normal both;
+  margin-bottom: 40px;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .main-header {
   position: relative;
   min-height: 75vh;
@@ -354,10 +379,6 @@ a {
   padding: 20px 0;
 }
 
-.nav__check, .nav .nav__check-label {
-  display: none;
-}
-
 .nav__logo {
   font-size: 3rem;
   padding-right: 20px;
@@ -399,31 +420,6 @@ a {
 
 .current-page {
   color: #f8e71c;
-}
-
-h1 {
-  font-size: 8rem;
-  -webkit-animation: fade-in 2s ease-in .3s normal both;
-          animation: fade-in 2s ease-in .3s normal both;
-  margin-bottom: 40px;
-}
-
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .yellow-heading {
