@@ -17,7 +17,7 @@
 
     &__heading {
         color: $light-text-color;
-        font-size: 16.6rem;
+        font-size: clamp(7rem, 9.5vw, 16.6rem);
         font-weight: 400;
         z-index: 20;
 
@@ -40,9 +40,25 @@
     padding: 20px 0;
 
     &__logo {
-        font-size: 3rem;
+        font-size: clamp(3rem, 2.2vw, 3.6rem);
         padding-right: 20px;
         color: $light-text-color
+    }
+
+    // Skip link style/position 
+    &__skip {
+        position: absolute;
+        left: -1000px;
+        top: 5px;
+        z-index: 999;
+        padding: 10px 15px;
+        background: $secondary-color;
+        color: $light-text-color;
+        transition: all .5s;
+
+        &:focus {
+            left: 50%;
+        }
     }
 
     &__ul {

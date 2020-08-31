@@ -257,7 +257,7 @@ html {
 body {
   color: #2c2c2c;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 1.46vw, 2rem);
 }
 
 .wrapper {
@@ -299,7 +299,7 @@ a {
 }
 
 .section__heading {
-  font-size: 3.2rem;
+  font-size: clamp(2.5rem, 2.3vw, 3.6rem);
   font-weight: bold;
   letter-spacing: 1px;
 }
@@ -356,7 +356,7 @@ h1 {
 
 .main-header__heading {
   color: #fff;
-  font-size: 16.6rem;
+  font-size: clamp(7rem, 9.5vw, 16.6rem);
   font-weight: 400;
   z-index: 20;
 }
@@ -380,9 +380,25 @@ h1 {
 }
 
 .nav__logo {
-  font-size: 3rem;
+  font-size: clamp(3rem, 2.2vw, 3.6rem);
   padding-right: 20px;
   color: #fff;
+}
+
+.nav__skip {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  padding: 10px 15px;
+  background: #0e902d;
+  color: #fff;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.nav__skip:focus {
+  left: 50%;
 }
 
 .nav__ul {
@@ -469,7 +485,7 @@ h1 {
 }
 
 .about__heading {
-  font-size: 5.63rem;
+  font-size: clamp(4rem, 4vw, 5.8rem);
 }
 
 .workshop__flex {
@@ -537,7 +553,7 @@ h1 {
 
 .more-info__icon {
   margin-right: 10px;
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 2vw, 2.5rem);
 }
 
 .more-info__icon .fa-circle {
@@ -642,12 +658,11 @@ h1 {
 }
 
 .sidebar__heading {
-  font-size: 1.8rem;
+  font-size: clamp(1.8rem, 1.2vw, 2rem);
   margin: 20px 0 15px 0;
 }
 
 .sidebar__text {
-  font-size: 1.6rem;
   line-height: 2.6rem;
 }
 
@@ -673,7 +688,6 @@ h1 {
 .sidebar__links {
   color: #2c2c2c;
   font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
   line-height: 2.6rem;
 }
 
@@ -709,7 +723,6 @@ h1 {
   display: block;
   margin-bottom: 35px;
   color: #074115;
-  font-size: 1.8rem;
   font-style: italic;
 }
 
@@ -741,11 +754,7 @@ h1 {
 .comments__heading--date {
   margin-bottom: 10px;
   color: #074115;
-  font-size: 2rem;
-}
-
-.comments__text {
-  font-size: 1.8rem;
+  font-size: clamp(1.8rem, 1.5vw, 2.2rem);
 }
 
 .form {
@@ -763,7 +772,6 @@ h1 {
   width: calc(50% - 15px);
   background: #f0efed;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 1.8rem;
 }
 
 .form__input--margin {
@@ -778,7 +786,6 @@ h1 {
   padding: 20px;
   background: #f0efed;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 1.8rem;
   resize: none;
 }
 
@@ -873,7 +880,6 @@ h1 {
 
 footer {
   font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
   font-weight: 400;
   text-align: center;
   background: #2c2c2c;
@@ -891,9 +897,6 @@ footer a:hover, footer a:focus {
 }
 
 @media (max-width: 1020px) {
-  .section__text {
-    font-size: 1.6rem;
-  }
   .main-header__img {
     width: 50%;
   }
@@ -920,6 +923,9 @@ footer a:hover, footer a:focus {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .nav__logo {
+    text-shadow: 2px 4px 3px black;
+  }
   .nav__ul {
     display: block;
     z-index: 10;
@@ -929,6 +935,7 @@ footer a:hover, footer a:focus {
   }
   .nav__link {
     padding: 10px 0;
+    text-shadow: 2px 4px 3px black;
   }
   .contact-nav-container,
   .blog-nav-container {
@@ -944,9 +951,6 @@ footer a:hover, footer a:focus {
   }
   .main-header__heading-box {
     height: 100%;
-  }
-  .main-header__heading {
-    font-size: 10rem;
   }
   .secondary-h1-container {
     min-height: 50hv;
@@ -1084,9 +1088,6 @@ footer a:hover, footer a:focus {
 @media (max-width: 480px) {
   .main-header__img {
     display: none;
-  }
-  .main-header__heading {
-    font-size: 7rem;
   }
   .comments {
     padding: 10px;

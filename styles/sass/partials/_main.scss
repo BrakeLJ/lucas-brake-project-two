@@ -3,19 +3,17 @@
 //-------------
 
 // About block
-
 .about {
     background: $background-color;
     text-align: center;
     padding: 200px 125px;
 
     &__heading {
-        font-size: 5.63rem;
+        font-size: clamp(4rem, 4vw, 5.8rem);
     }
 }
 
 // workshop block
-
 .workshop {
 
     &__flex {
@@ -76,7 +74,7 @@
 
     &__icon {
         margin-right: 10px;
-        font-size: 2rem;
+        font-size: clamp(1.6rem, 2vw, 2.5rem);
         .fa-circle {
             color: $primary-color;
         }
@@ -119,6 +117,7 @@
         padding: 75px
     }
 
+    // Zoom effect 
     &__li {
         overflow: hidden;
     }
@@ -127,6 +126,7 @@
         margin: 0 20px;
     }
 
+    // Zoom effect 
     &__img {
         transition: transform .5s;
         &:hover {
@@ -168,12 +168,11 @@
     }
 
     &__heading {
-        font-size: 1.8rem;
+        font-size: clamp(1.8rem, 1.2vw, 2rem);
         margin: 20px 0 15px 0;
     }
 
     &__text {
-        font-size: 1.6rem;
         line-height: 2.6rem;
     }
 
@@ -198,7 +197,6 @@
     &__links {
         color: $body-text-color;
         font-family: $secondary-font;
-        font-size: 1.6rem;
         line-height: 2.6rem;
     }
 }
@@ -228,7 +226,6 @@
         margin-bottom: 35px;
 
         color: $secondary-text-color;
-        font-size: 1.8rem;
         font-style: italic;
 
         &--bold {
@@ -260,11 +257,7 @@
     &__heading--date {
         margin-bottom: 10px;
         color: $secondary-text-color;
-        font-size: 2rem;
-    }
-
-    &__text {
-        font-size: 1.8rem;
+        font-size: clamp(1.8rem, 1.5vw, 2.2rem);
     }
 }
 
@@ -285,7 +278,6 @@
         background: $background-color;
 
         font-family: $primary-font;
-        font-size: 1.8rem;
     }
 
     &__input--margin {
@@ -302,7 +294,6 @@
         background: $background-color;
 
         font-family: $primary-font;
-        font-size: 1.8rem;
         
         resize: none;
     }

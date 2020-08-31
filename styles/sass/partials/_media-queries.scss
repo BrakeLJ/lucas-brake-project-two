@@ -1,11 +1,6 @@
 
 
 @media (max-width: 1020px) {
-    //General
-    .section__text {
-        font-size: 1.6rem;
-    }
-
     // Main 
     .main-header__img {
         width: 50%;
@@ -36,6 +31,10 @@
     .nav {
         justify-content: space-between;
 
+        &__logo {
+            text-shadow: 2px 4px 3px black;
+        }
+
         &__ul {
             display: block;
             z-index: 10;
@@ -47,6 +46,7 @@
 
         &__link {
             padding: 10px 0;
+            text-shadow: 2px 4px 3px black;
         }
     }
 
@@ -65,10 +65,6 @@
 
         &__heading-box {
             height: 100%;
-        }
-
-        &__heading {
-            font-size: 10rem;
         }
     }
 
@@ -218,10 +214,6 @@
     .main-header{
         &__img {
             display: none;
-        }
-
-        &__heading {
-            font-size: 7rem;
         }
     }
 

@@ -23,7 +23,7 @@ html {
 body {
      color: $body-text-color;
      font-family: $primary-font;
-     font-size: 2rem;
+     font-size: clamp(1.6rem, 1.46vw, 2rem);
 }
 
 .wrapper {
@@ -67,7 +67,7 @@ a {
 }
 
 .section__heading {
-    font-size: 3.2rem;
+    font-size: clamp(2.5rem, 2.3vw, 3.6rem);
     font-weight: bold;
     letter-spacing: 1px;
 }
@@ -79,6 +79,7 @@ a {
 }
 
 h1 {
+// Kept font size static across screen sizes  
     font-size: 8rem;
     animation: fade-in 2s ease-in .3s normal both;
     margin-bottom: 40px;
